@@ -7,7 +7,7 @@ public class Conta {
     private double chequeEspecialUsado = 0;
     private double chequeEspecialDisponivel;
 
-    double saldo;
+    private double saldo;
 
     public Conta(String numero, String titular, double saldo) {
         this.saldo = saldo;
