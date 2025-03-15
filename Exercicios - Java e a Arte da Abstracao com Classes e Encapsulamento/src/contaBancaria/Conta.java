@@ -41,9 +41,9 @@ public class Conta {
         if (valor > 0){
             if (valor >= taxa){
                 double valorADepositar = valor - taxa;
-                System.out.println("Realizamos a cobrança de R$" + taxa + " referente ao uso do cheque especial");
+                if (taxa > 0) System.out.println("Realizamos a cobrança de R$" + taxa + " referente ao uso do cheque especial");
                 if (valorADepositar > chequeEspecialUsado){
-                    saldo = valorADepositar - chequeEspecialUsado;
+                    saldo += valorADepositar - chequeEspecialUsado;
                     chequeEspecialUsado = 0;
                     chequeEspecialDisponivel = chequeEspecial;
                 } else {
