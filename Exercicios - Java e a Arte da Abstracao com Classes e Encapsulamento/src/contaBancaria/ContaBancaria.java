@@ -1,7 +1,5 @@
 package contaBancaria;
 
-import com.sun.source.tree.WhileLoopTree;
-
 import java.util.Scanner;
 
 public class ContaBancaria {
